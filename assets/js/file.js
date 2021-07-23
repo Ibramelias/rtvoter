@@ -128,7 +128,7 @@ $(document).ready(function(){
 
     var auidoElement = document.createElement("audio");
 
-    auidoElement.setAttribute("src", "assets/intro.mp3");
+    auidoElement.setAttribute("src", "assets/audio/intro.mp3");
 
     // $("#home").on("click", function(){
     //     auidoElement.play();
