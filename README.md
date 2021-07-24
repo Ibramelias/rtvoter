@@ -5,6 +5,7 @@
 * [Build with](#Buildwith)
 * [contributing](#Contributing)
 * [Image](#Image)
+* [Contact me](#contact)
 
 
 ## Description
@@ -30,6 +31,6 @@ Open for contributing and add new ideas.
 
 
 
-## Contanct
+## Contact
 
 I love to hear your feedback and your comments, do not hesitate to reach me out [Shoot me email](mailto:ibramdarwish@gmail.com)
