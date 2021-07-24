@@ -105,4 +105,4 @@ dist
 
 
 # location HTML file 
-.location.html
+*.location

@@ -2,7 +2,7 @@
 
 ## Table of Contents. 
 * [Description](#Description)
-* [Build with](#Languages)
+* [Languages](#Languages)
 * [contributing](#Contributing)
 * [Image](#Image)
 * [Contact me](#contact)
