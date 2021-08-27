@@ -1,0 +1,19 @@
+{
+  "name": "rtvoter",
+  "version": "1.0.0",
+  "description": "## Table of Contents.  * [Description](#Description) * [Languages](#Languages) * [contributing](#Contributing) * [Image](#Image) * [Contact me](#contact)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibramelias/rtvoter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibramelias/rtvoter/issues"
+  },
+  "homepage": "https://github.com/Ibramelias/rtvoter#readme"
+}
