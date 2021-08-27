@@ -21,21 +21,20 @@
     font-family: 'Press Start 2P', cursive;
     /* font-weight: bold; */
     font-size: 14px;
-
-    
+ 
 
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         background-color: #00439c;
-    }
+    } */
 
-    .navbar{
+    /* .navbar{
         height: 0;
         margin-top: 0;
-    }
-}
+    } */
+/* } */
 
 .nav-item {
     padding-left: 20px;
