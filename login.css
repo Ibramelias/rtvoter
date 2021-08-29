@@ -1,0 +1,102 @@
+
+.all-page{
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://t3.ftcdn.net/jpg/03/23/88/08/360_F_323880864_TPsH5ropjEBo1ViILJmcFHJqsBzorxUB.jpg");
+    height: 100vh;
+    margin-top: 0; 
+    padding: 0;
+    background-position: 10% 10% ;
+    background-size: cover;
+
+}
+
+
+
+.navbar{
+    height: 10vh;
+    font-family: 'Press Start 2P', cursive;
+    /* font-weight: bold; */
+    font-size: 14px;
+ 
+
+}
+
+/* @media only screen and (max-width: 991px) {
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        background-color: #00439c;
+    } */
+
+    /* .navbar{
+        height: 0;
+        margin-top: 0;
+    } */
+/* } */
+
+.nav-item {
+    padding-left: 20px;
+   
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
+    color: #fff;
+}
+/* 
+.nav-link:hover{
+    background-color: rgb(216, 105, 64);
+} */
+
+.navbar-light .navbar-brand {
+    color: #2e69b6;
+}
+
+
+
+.logo{
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+}
+
+.navbtn{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.navbtn:hover{
+    color: #fff;
+    border-bottom: 3px solid #0d6efd;
+}
+
+
+/* contact form */
+
+.big-card{
+   /* margin:100px; */
+   align-items: center;
+   margin: 30px;
+   color: #fff;
+  
+  height: 80vh;
+  padding:50px;
+  border-radius: 20px;
+
+
+}
+
+.login-title{
+    background-color: rgb(247, 173, 36);
+    text-align: center;
+    width: 40%;
+    align-items: center;
+    height: 5vh;
+    padding: 8px;
+    border-radius: 5%;
+    color: #000;
+}
+
+
+button {
+    margin-top: 30px;
+}
