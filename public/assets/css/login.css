@@ -57,10 +57,12 @@
 
 .navbar-light .navbar-brand {
     color: rgb(22, 145, 88);
+    font-size: 50px;
 }
 
 .navbar-light .navbar-brand:hover{
-    color: rgb(22, 145, 88)
+    color: rgb(22, 145, 88);
+    
 }
 
 
