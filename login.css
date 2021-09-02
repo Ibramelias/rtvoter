@@ -1,7 +1,7 @@
 
 .all-page{
     background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://t3.ftcdn.net/jpg/03/23/88/08/360_F_323880864_TPsH5ropjEBo1ViILJmcFHJqsBzorxUB.jpg");
-    height: 100vh;
+    height: auto;
     margin-top: 0; 
     padding: 0;
     background-position: 10% 10% ;
@@ -13,9 +13,9 @@
 
 .navbar{
     height: 10vh;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Abril Fatface', cursive;
     /* font-weight: bold; */
-    font-size: 14px;
+    font-size: 20px;
  
 
 }
@@ -32,8 +32,19 @@
 /* } */
 
 .nav-item {
-    padding-left: 20px;
+    /* padding-left: 20px; */
+    /* word-spacing: 10%; */
    
+}
+
+.nav-item:hover{
+    color:#fff;
+    background-color: rgb(247, 173, 36);
+    border-radius: 5px;
+}
+
+.nav-item:active{
+    background-color:rgb(91, 194, 91);
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
@@ -45,14 +56,18 @@
 } */
 
 .navbar-light .navbar-brand {
-    color: #2e69b6;
+    color: rgb(22, 145, 88);
+}
+
+.navbar-light .navbar-brand:hover{
+    color: rgb(22, 145, 88)
 }
 
 
 
 .logo{
     color: #fff;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-size: 30px;
 }
 
@@ -81,6 +96,7 @@
   height: 80vh;
   padding:50px;
   border-radius: 20px;
+  margin: 100px;
 
 
 }
@@ -99,4 +115,41 @@
 
 button {
     margin-top: 30px;
+}
+
+
+.end{
+    /* margin-top: 3%; */
+    background-color: #00439c;
+    width: 100%;
+    height: 30vh;
+    padding-top:50px;
+    /* text-align: center; */
+}
+
+.col-3{
+    /* text-align: left; */
+}
+
+
+.close{
+    display:list-item;
+    list-style: none;
+    padding-top: 10px;
+    text-decoration: none;
+    /* justify-content: center; */
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 30%;
+    /* width:30%; */
+
+    
+}
+
+.close:hover{
+    color:#fff;
 }
