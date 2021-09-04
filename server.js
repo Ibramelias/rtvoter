@@ -38,29 +38,32 @@
 // const PORT = 8080;
 
 const express = require("express");
+var session = require("express-session");
+const passport = require("./config/passport");
 // const htmlRoutes = require("./routes/html-routes");
 // const userRoutes = require("./routes/user-routes");
 // const listingRoute = require("./routes/listing-routes");
 // const db = require("./models");
-// const passport = require("./config/passport");
+
 // const session = require("express-session");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
+// const http = require("http")
 
 // Create a generic function to handle requests and responses
-function handleRequest(request, response) {
+// function handleRequest(request, response) {
 
   // Send the below string to the client when the user visits the PORT URL
-  response.end("It Works!! Path Hit: " + request.url);
-}
+  // response.end("It Works!! Path Hit: " + request.url);
+// }
 app.use(express.static('public'))
 // Use the Node HTTP package to create our server.
 // Pass the handleRequest function to empower it with functionality.
-const server = http.createServer(handleRequest);
+// const server = http.createServer(handleRequest);
 
 // Start our server so that it can begin listening to client requests.
-server.listen(PORT, function() {
+app.listen(PORT, function() {
 
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);

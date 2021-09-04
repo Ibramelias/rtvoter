@@ -1,11 +1,11 @@
 
 .all-page{
-    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://t3.ftcdn.net/jpg/03/23/88/08/360_F_323880864_TPsH5ropjEBo1ViILJmcFHJqsBzorxUB.jpg");
+    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg");
     height: auto;
     margin-top: 0; 
     padding: 0;
-    background-position: 10% 10% ;
-    background-size: cover;
+    background-position: 50% 50% ;
+    /* background-size: cover; */
 
 }
 
@@ -57,7 +57,7 @@
 
 .navbar-light .navbar-brand {
     color: rgb(22, 145, 88);
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .navbar-light .navbar-brand:hover{
