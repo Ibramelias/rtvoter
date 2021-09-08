@@ -38,8 +38,8 @@
 // const PORT = 8080;
 
 const express = require("express");
-var session = require("express-session");
-const passport = require("./config/passport");
+// var session = require("express-session");
+// const passport = require("./config/passport");
 // const htmlRoutes = require("./routes/html-routes");
 // const userRoutes = require("./routes/user-routes");
 // const listingRoute = require("./routes/listing-routes");
