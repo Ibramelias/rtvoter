@@ -33,7 +33,7 @@ $(document).ready(function(){
             email:email,
             password:password
         }).then(function(data){
-            window.location.replace("/member");
+            window.location.replace("../member");
         }).catch(handleLoginError);
     }
 
