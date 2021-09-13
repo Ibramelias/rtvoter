@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/Ibramelias/rtvoter#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "http": "0.0.1-security",
     "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.6.5",
     "sql": "^0.78.0"
   }
 }

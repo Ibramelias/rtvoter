@@ -9,10 +9,10 @@ $(document).ready(function(){
     // when the signup button is clicked, we validate the email and password are not blank
 
     signUpForm.on("submit", function(event){
-        event.preventDefualt();
+        event.preventDefault();
         var userData = {
-            email: emailInput.val().trim(),
-            password: passwordInput.val().trim()
+            email: emailInput.val() || '',
+            password: passwordInput.val() || ''
         };
 
         if(!userData.email || !userData.password){
@@ -33,7 +33,7 @@ $(document).ready(function(){
             email:email,
             password:password
         }).then(function(data){
-            window.location.replace("../member");
+            window.location.replace("/member");
         }).catch(handleLoginError);
     }
 
