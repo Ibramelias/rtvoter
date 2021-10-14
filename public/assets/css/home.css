@@ -20,7 +20,7 @@
     height: 10vh;
     font-family: 'Abril Fatface', cursive;
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 18px;
  
 }
 
@@ -28,9 +28,9 @@
 
 
 .nav-item:hover{
-    color:#fff;
+    color: #000;
     background-color: rgb(247, 173, 36);
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .nav-item:active{
@@ -47,16 +47,13 @@
         margin-top: 0;
     } */
 /* } */
+ 
 
-.nav-item {
-    /* padding-left: 20px; */
-    
-   
-}
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: #fff;
+    color: rgb(208, 198, 198);
 }
+
 
 .navbar-light .navbar-brand {
     color: rgb(22, 145, 88);
@@ -215,7 +212,7 @@
 
 .btn:hover{
     background-color: transparent;
-    color: #0d6efd;
+    color: rgb(247, 173, 36);
 }
 .btn:active{
     background-color: transparent;
@@ -262,11 +259,12 @@
 }
 
 .card-2{
-    background-image: url("https://soleposter.com/image/cache/catalog/poster/10070/10070-550x550h.jpg");
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/28877b101249425.5f1a56032f2d6.png");
     height: 50vh;
     background-size: cover;
     border-radius: 10px;
     margin-right: 8%;
+    background-position: 50% 50% ;
 }
 
 .card-3{
@@ -279,14 +277,14 @@
 
 
 .card-description{
-    width: 30%;
+    width: 27%;
     margin-top: 2%;
     color: #000;
     
 }
 
 .card-description2{
-    padding-left: 3%;
+    /* padding-left: 3%; */
     margin-top: 2%;
     color: #000;
 }
@@ -348,10 +346,10 @@ h2{
 }
 
 .header-coming{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-align: left;
-    margin-left: -10%;
-    font-size: 50px;
+    /* margin-left: -10%; */
+    font-size: 40px;
     font-family: 'Orbitron', sans-serif;
 
 }
@@ -360,10 +358,10 @@ h2{
 
 .carousel{
     position: relative;
-    height: 600px;
-    width: 90%;
+    height: 400px;
+    width: 70%;
     margin: 0 auto;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     
 }
 
@@ -596,7 +594,7 @@ h2{
     /* margin-top: 3%; */
     background-color: #00439c;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     padding-top:50px;
     /* text-align: center; */
 }
@@ -614,7 +612,7 @@ h2{
     /* justify-content: center; */
     color: #fff;
     text-transform: capitalize;
-    font-size: 13px;
+    font-size: 11px;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: 1px;
     text-align: left;
