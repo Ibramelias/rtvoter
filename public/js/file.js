@@ -9,6 +9,28 @@
 // });
 
 
+// Back to top Button // 
+
+// Bet the button
+toTop = document.getElementById("topBtn");
+// when the user scrolls down from the top of the document, show the button.
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction () {
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        toTop.style.display = "block";
+    }else{
+        toTop.style.display = "none";
+    }
+}
+
+// when the user clicks on the button, scroll to the top of the document
+
+function topFunction() {
+    document.body.scrollTop = 0; // for safari users 
+    document.documentElement.scrollTop = 0; // for other browsers 
+}
+
 /// carosuel slid-show ///
 const track = document.querySelector('.carsouel__track');
 const slides = Array.from(track.children);
