@@ -9,9 +9,26 @@
 // });
 
 
+// login PopUp //////
+
+// const open = document.getElementById("open");
+
+// const modal = document.getElementById("modalcontainer");
+
+// const close = document.getElementById("close");
+
+// open.addEventListener("click", () => {
+//     modal.classList.add("show");
+// });
+
+// close.addEventListener('click', () => {
+//     modal.classList.remove("show")
+// })
+
+ 
 // Back to top Button // 
 
-// Bet the button
+// Get the button
 toTop = document.getElementById("topBtn");
 // when the user scrolls down from the top of the document, show the button.
 window.onscroll = function() {scrollFunction()};

@@ -4,6 +4,53 @@
 }
 
 
+nav{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#searchEng {
+    background-color: transparent;
+    color: rgb(247, 173, 36);
+}
+
+#mic{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+
+.modal-container{
+    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    
+}
+
+.modal-container .show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal-1{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px 50px;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+
+
 /* nav{ */
     /* text-align: center;
     width: 100%;
@@ -51,7 +98,7 @@
 
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: rgb(208, 198, 198);
+    color: rgb(240, 235, 235);
 }
 
 
@@ -93,7 +140,7 @@
 }
 
 .main{
-    background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://cdn1.dotesports.com/wp-content/uploads/2019/10/03111139/call-of-duty-mobile-1.jpg");
+    background-image: linear-gradient(rgb(0,0,0,0.9),rgba(125, 75, 75, 0.2)), url("https://cdn1.dotesports.com/wp-content/uploads/2019/10/03111139/call-of-duty-mobile-1.jpg");
     height: 100vh;
     margin-top: 0; 
     padding: 0;
@@ -595,7 +642,7 @@ h2{
     background-color: #00439c;
     width: 100%;
     height: 20vh;
-    padding-top:50px;
+    padding-top:30px;
     /* text-align: center; */
 }
 
@@ -603,6 +650,13 @@ h2{
     /* text-align: left; */
 }
 
+
+#close{
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+
+}
 
 .close{
     display:list-item;
