@@ -29,3 +29,22 @@ $('#start-btn').click(function(event){
     recognition.start();
 })
 
+// $(document).ready(function(){
+
+
+
+var searchBtn = document.getElementById("search-btn");
+
+
+
+function search() {
+
+    var searchBox = document.querySelector("#textbox").val();
+
+    console.log(searchBox);
+
+    alert("you clicked")
+}
+
+// })
+
