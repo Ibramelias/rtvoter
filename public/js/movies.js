@@ -12,11 +12,12 @@ $(document).ready(function () {
         }).then(function (response) {
             console.log(response);
 
-            
+            var imgURL = response.Poster;
+            var img = $("<img>").attr("src",imgURL );
+            $("#films").append(img);
+
             var name = response.Title;
-           
             var movie1 = $("<p>").text(name);
-            // console.log(movie1);
             $("#films").append(movie1);
 
         })
