@@ -3,22 +3,27 @@ $(document).ready(function () {
 
     $("#btn").on("click", function getMovie() {
 
-        var movie = $("#movie").val();
-        var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+        // var movie = $("#movie").val();
+        var queryURL = "https://www.omdbapi.com/?s=inception&apikey=trilogy";
 
         $.ajax({
             url: queryURL,
             method: "GET"
-        }).then(function (response) {
-            console.log(response);
+        }).then(function (data) {
+            console.log(data);
+            $("#films").text(JSON.stringify(data));
 
-            var imgURL = response.Poster;
-            var img = $("<img>").attr("src",imgURL );
-            $("#films").append(img);
+            // var imgURL = data[0].Poster;
+            // var img = $("<img>").attr("src",imgURL );
+            // $("#films").append(img);
 
-            var name = response.Title;
-            var movie1 = $("<p>").text(name);
-            $("#films").append(movie1);
+            // var name = data.Title;
+            // var movie1 = $("<p>").text(name);
+            // $("#films").append(movie1);
+
+            // var year = data.Released;
+            // var release = $("<p>").text("Released on " + year );
+            // $("#films").append(release);
 
         })
 
