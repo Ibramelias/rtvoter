@@ -31,14 +31,23 @@ $(document).ready(function () {
             // }
 
             let movieInfo = response.Search.map(function (element) {
-                return `${element.Title} ${element.Year}`;
+                return `${element.Title}`;
 
-
-                // var name = data.Title;
-                // var movie1 = $("<p>").text(name);
-               
             })
-            console.log(movieInfo);
+
+            let moviePoster = response.Search.map(function (element) {
+                return `${element.Poster}`;
+
+            })
+
+            console.log(moviePoster);
+
+            // var imgURL = data[0].Poster;
+
+            var img = $("<img>").attr("src", moviePoster);
+            $("#films").append(img[0]);
+            console.log(img)
+
             $("#films").append(movieInfo[0]);
 
 
