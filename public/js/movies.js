@@ -40,15 +40,16 @@ $(document).ready(function () {
 
             })
 
-            console.log(moviePoster);
+            console.log(moviePoster[3]);
 
             // var imgURL = data[0].Poster;
 
             var img = $("<img>").attr("src", moviePoster);
-            $("#films").append(img[0]);
+            $("#films").append(img);
             console.log(img)
 
-            $("#films").append(movieInfo[0]);
+            $("#films").addClass("info")
+            $("#films").append(movieInfo);
 
 
             // var imgURL = data[0].Poster;

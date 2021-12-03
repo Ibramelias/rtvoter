@@ -57,7 +57,15 @@ body{
     border-bottom: 3px solid #0d6efd;
 }
 
+img{
+    display:inline-block;
+}
 
-#films{
+
+.info{
+    font-size: 13px;
     color: #fff;
+    height: 100vh;
+    /* display: inline-block; */
+    
 }
