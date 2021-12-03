@@ -63,8 +63,11 @@ body{
 .info{
     font-size: 13px;
     color: #fff;
-    height: 10vh;
     margin-bottom: 2px;
     display: inline;
     
+}
+
+.info img {
+    height: 20vh;
 }
