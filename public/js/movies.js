@@ -30,26 +30,43 @@ $(document).ready(function () {
 
             // }
 
-            let movieInfo = response.Search.map(function (element) {
+            let title = response.Search.map(function (element) {
                 return `${element.Title}`;
 
             })
 
-            let moviePoster = response.Search.map(function (element) {
+            let Poster = response.Search.map(function (element) {
                 return `${element.Poster}`;
 
             })
 
-            console.log(moviePoster[3]);
+            console.log(Poster[3]);
+
+            for (var i = 0; i < title.length; i++) {
+                console.log(title[i])
+                var name = $("<p>").text(title[i]);
+
+
+                $("#films").addClass("info")
+                $("#films").append(name);
+
+                for (var j = 0; j < Poster.length; j++){
+
+                    var img = $("<img>").attr("src", Poster[j]);
+                    $("#films").append(img);
+                    
+                }
+              
+            }
+
+       
 
             // var imgURL = data[0].Poster;
 
-            var img = $("<img>").attr("src", moviePoster);
-            $("#films").append(img);
-            console.log(img)
 
-            $("#films").addClass("info")
-            $("#films").append(movieInfo);
+            // console.log(img)
+
+
 
 
             // var imgURL = data[0].Poster;

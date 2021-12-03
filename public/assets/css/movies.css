@@ -66,6 +66,7 @@ img{
     font-size: 13px;
     color: #fff;
     height: 100vh;
-    /* display: inline-block; */
+    margin: 2%;
+    display: inline-block
     
 }
