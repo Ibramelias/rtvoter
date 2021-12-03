@@ -45,17 +45,18 @@ $(document).ready(function () {
             for (var i = 0; i < title.length; i++) {
                 console.log(title[i])
                 var name = $("<p>").text(title[i]);
+                var img = $("<img>").attr("src", Poster[i]);
 
 
                 $("#films").addClass("info")
-                $("#films").append(name);
+                $("#films").append(name,img);
 
-                for (var j = 0; j < Poster.length; j++){
+                // for (var j = 0; j < Poster.length; j++){
 
-                    var img = $("<img>").attr("src", Poster[j]);
-                    $("#films").append(img);
+                //    
+                //     $("#films").append(img);
                     
-                }
+                // }
               
             }
 
