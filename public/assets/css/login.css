@@ -3,7 +3,6 @@ body{
     text-align: center;
 }
 
-
 .all-page{
     background-image: linear-gradient(rgb(0,0,0,0.8),rgb(0,0,0,0.1)), url("https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg");
     height: 100vh;
@@ -11,71 +10,38 @@ body{
     padding: 0;
     background-position: 50% 50%;
 
-
 }
-
-
-
+ /*  Navbar */
 .navbar{
     height: 10vh;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bebas Neue', cursive;
     /* font-weight: bold; */
-    font-size: 20px;
+    font-size: 25px;
  
-
-}
-
-/* @media only screen and (max-width: 991px) {
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        background-color: #00439c;
-    } */
-
-    /* .navbar{
-        height: 0;
-        margin-top: 0;
-    } */
-/* } */
-
-.nav-item {
-    /* padding-left: 20px; */
-    /* word-spacing: 10%; */
-   
 }
 
 .nav-item:hover{
-    color:#fff;
-    background-color: rgb(247, 173, 36);
-    border-radius: 5px;
+    color: #000;
+    background-color: #E50914;
+    border-radius: 3px;
 }
 
 .nav-item:active{
-    background-color:rgb(91, 194, 91);
+    background-color: #E50914;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: #fff;
+    color: rgb(240, 235, 235);
 }
-/* 
-.nav-link:hover{
-    background-color: rgb(216, 105, 64);
-} */
 
 .navbar-light .navbar-brand {
-    color: rgb(22, 145, 88);
-    font-size: 35px;
-}
-
-.navbar-light .navbar-brand:hover{
-    color: rgb(22, 145, 88);
+    color: #E50914;
+    font-size: 50px;
     
 }
 
-
-
-.logo{
-    color: #fff;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 30px;
+.navbar-light .navbar-brand:hover{
+    color: #E50914;
 }
 
 .navbtn{
@@ -90,7 +56,6 @@ body{
     color: #fff;
     border-bottom: 3px solid #0d6efd;
 }
-
 
 /* contact form */
 

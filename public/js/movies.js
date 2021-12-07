@@ -1,5 +1,5 @@
 
-var categories = ['life', 'sad', 'happy', 'war', 'lie'];
+var categories = ['christmas', 'sad', 'happy', 'war', 'lie', 'life'];
 
 $(document).ready(function () {
     function getResult(category) {
@@ -8,6 +8,7 @@ $(document).ready(function () {
     }
     categories.forEach(function (category) {
         getResult(category).then(function (response) {
+            console.log(response)
             response.Search.forEach(function (film) {
                 $('#' + category).find('.film-poster').append('<img src=' + film.Poster + '/>')
             })
