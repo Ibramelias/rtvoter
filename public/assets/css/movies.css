@@ -65,6 +65,7 @@ body{
     flex-direction: column;
     position: relative;
     margin-left: 1px;
+    width: 105%;
     
 }
 
@@ -79,13 +80,20 @@ body{
 }
 
 .info img {
-    height: 20vh;
+    height: 23vh;
     margin-left: 10px;
     border-radius: 5%;
     /* display: inline-block; */
     /* margin-bottom: 2px; */
     /* width: 1200%; */
 
+}
+
+.film-section_title{
+    color:#fff;
+    margin-left: 10px;
+font-family: 'Calistoga', cursive;
+font-size: 25px;
 
 }
 
