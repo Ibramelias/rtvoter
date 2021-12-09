@@ -1,0 +1,95 @@
+
+
+
+/* Navbar */
+.navbar{
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    /* font-weight: bold; */
+    font-size: 25px;
+ 
+}
+
+.nav-item:hover{
+    color: #000;
+    background-color: #E50914;
+    border-radius: 3px;
+}
+
+.nav-item:active{
+    background-color: #E50914;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
+    color: #000;
+}
+
+.navbar-light .navbar-brand {
+    color: #E50914;
+    font-size: 50px;
+    
+}
+
+.navbar-light .navbar-brand:hover{
+    color: #E50914;
+}
+
+.navbtn{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.navbtn:hover{
+    color: #fff;
+    border-bottom: 3px solid #0d6efd;
+}
+
+
+.all-page{
+    background-image:url('https://scontent-lga3-2.xx.fbcdn.net/v/t39.8562-6/252509574_769584853942762_4631444119178197375_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=ndtGgqAEHuAAX-J9U8n&_nc_ht=scontent-lga3-2.xx&oh=59af1a631c0db2890bf3c6d23ae56647&oe=61B7F254');
+    height: 100vh;
+    margin-top: 0; 
+    padding: 0;
+    background-position: 10% 10% ;
+    background-size: cover;
+    /* text-align: center; */
+    /* padding: 50%; */
+  
+}
+
+.slogan{
+    color:#fff;
+    position: absolute;
+    /* width: 100px; */
+    /* height: 50px; */
+    top: 50%;
+    left: 30%;
+    margin-left: -20px; /*margin is -0.5 * dimension*/
+    margin-top: -25px; 
+ 
+}
+
+.articals{
+    height: 100vh;
+    
+}
+
+.container-metaflix{
+    margin-top: 3%;
+    text-align: center;
+    
+}
+.meta{
+    color: #E50914;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+
+.mission{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}

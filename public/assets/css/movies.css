@@ -80,6 +80,7 @@ body{
     height: 23vh;
     margin-left: 10px;
     border-radius: 5%;
+    box-shadow: 1px 3px 3px #E50914; 
     /* display: inline-block; */
     /* margin-bottom: 2px; */
     /* width: 1200%; */
