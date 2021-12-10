@@ -1,7 +1,3 @@
-body{
-    background-color: #000;
-}
-
 
 .navbar{
     height: 10vh;
@@ -22,7 +18,7 @@ body{
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: rgb(240, 235, 235);
+    color: #000;
 }
 
 .navbar-light .navbar-brand {
@@ -48,3 +44,8 @@ body{
     border-bottom: 3px solid #0d6efd;
 }
 
+
+.all-games{
+    background-color: #000;
+    height: 100vh;
+}
