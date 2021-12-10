@@ -63,17 +63,17 @@
 .slogan{
     color:#fff;
     position: absolute;
-    /* width: 100px; */
-    /* height: 50px; */
+  font-family:'work sans', sans-serif;
     top: 50%;
-    left: 30%;
+    left: 35%;
     margin-left: -20px; /*margin is -0.5 * dimension*/
     margin-top: -25px; 
+    text-align: center;
  
 }
 
-.articals{
-    height: 100vh;
+.intro{
+    /* height: 100vh; */
     
 }
 
@@ -89,7 +89,16 @@
 }
 
 .mission{
-    color: #000;
+    color: rgb(77, 73, 73);
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
+}
+
+
+.one{
+
+}
+.container-articals{
+    height: 100vh;
+    margin-top: 15%;
 }
