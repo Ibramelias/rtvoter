@@ -56,10 +56,6 @@
     background-position: 10% 10% ;
     background-size: cover;
     background-attachment: fixed;
-    /* position: absolute; */
-    /* text-align: center; */
-    /* padding: 50%; */
-  
 }
 
 .slogan{
@@ -68,13 +64,13 @@
     font-family:'work sans', sans-serif;
     top: 50%;
     left: 35%;
-    margin-left: -20px; /*margin is -0.5 * dimension*/
+    margin-left: -20px;
     margin-top: -25px; 
     text-align: center;
  
 }
 
-.intro{
+.content{
     height: 100vh;
     
 }
@@ -94,4 +90,16 @@
     color: rgb(77, 73, 73);
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
+}
+
+.one{
+    margin-top:10%;
+}
+.video{
+    width: 150%;
+    /* height: 30vh; */
+}
+
+.row justify-content-evenly{
+    height: 100vh;
 }
