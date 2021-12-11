@@ -48,13 +48,15 @@
 }
 
 
-.all-page{
+.img{
     background-image:url('https://scontent-lga3-2.xx.fbcdn.net/v/t39.8562-6/252509574_769584853942762_4631444119178197375_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=ndtGgqAEHuAAX-J9U8n&_nc_ht=scontent-lga3-2.xx&oh=59af1a631c0db2890bf3c6d23ae56647&oe=61B7F254');
     height: 100vh;
     margin-top: 0; 
     padding: 0;
     background-position: 10% 10% ;
     background-size: cover;
+    background-attachment: fixed;
+    /* position: absolute; */
     /* text-align: center; */
     /* padding: 50%; */
   
@@ -63,7 +65,7 @@
 .slogan{
     color:#fff;
     position: absolute;
-  font-family:'work sans', sans-serif;
+    font-family:'work sans', sans-serif;
     top: 50%;
     left: 35%;
     margin-left: -20px; /*margin is -0.5 * dimension*/
@@ -73,7 +75,7 @@
 }
 
 .intro{
-    /* height: 100vh; */
+    height: 100vh;
     
 }
 
@@ -90,15 +92,6 @@
 
 .mission{
     color: rgb(77, 73, 73);
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Work Sans', sans-serif;
-}
-
-
-.one{
-
-}
-.container-articals{
-    height: 100vh;
-    margin-top: 15%;
 }
