@@ -1,7 +1,7 @@
 
 // var categories = ['christmas', 'sad', 'happy', 'war', 'lie', 'life'];
 var categories = ['popular','upcoming', 'top_rated','now_playing'];
-var imgURL = "https://image.tmdb.org/t/p/w500";
+var imgURL = "https://image.tmdb.org/t/p/w154";
 
 $(document).ready(function () {
     function getResult(category) {
@@ -14,7 +14,7 @@ $(document).ready(function () {
             console.log(response)
             response.results.forEach(function (film) {
                 $('#' + category).find('.film-poster').append('<img src=' + imgURL + film.poster_path + '>')
-                // $('#' + category).find('.film-poster').append('<p>' + film.popularity+ '</p>')
+                // $('#' + category).find('.title').append( film.title + "   " + film.release_date)
             })
         })
     })

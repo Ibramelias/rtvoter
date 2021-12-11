@@ -51,7 +51,7 @@
 .all-page{
     padding-top: 60px ;
     background: #000;
-    width: 190%;
+    width: 195%;
     height: 250vh;
 }
 
@@ -67,21 +67,18 @@
 }
 
 
+
 .info p{
     font-size: 13px;
-    color: #fff;
-    /* padding-top: 20%; */
+    color: #000;
     
 }
 
 .info img {
-    height: 23vh;
+    /* height: vh; */
     margin-left: 15px;
     border-radius: 5%;
-    /* box-shadow: 1px 3px 3px #E50914;  */
-    /* display: inline-block; */
-    /* margin-bottom: 2px; */
-    /* width: 1200%; */
+    cursor: pointer;
 }
 
 
