@@ -47,6 +47,9 @@
     border-bottom: 3px solid #0d6efd;
 }
 
+.main{
+    height: 300vh;
+}
 
 .img{
     background-image:url('https://scontent-lga3-2.xx.fbcdn.net/v/t39.8562-6/252509574_769584853942762_4631444119178197375_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=ndtGgqAEHuAAX-J9U8n&_nc_ht=scontent-lga3-2.xx&oh=59af1a631c0db2890bf3c6d23ae56647&oe=61B7F254');
@@ -76,14 +79,14 @@
 }
 
 .container-metaflix{
-    margin-top: 3%;
-    text-align: center;
-    
+    margin-top: 6%;
+    text-align: center; 
 }
+
 .meta{
     color: #E50914;
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .mission{
@@ -97,9 +100,43 @@
 }
 .video{
     width: 150%;
-    /* height: 30vh; */
+    
 }
 
-.row justify-content-evenly{
-    height: 100vh;
+.container-build{
+    margin-top: 15%;
+    text-align: center; 
+}
+.build{
+    font-size: 50px;
+}
+
+.product{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.img-one{
+    width: 80%;
+    height: auto;
+}
+.img-two{
+    width: 80%;
+    margin-top: 30%;
+    height: auto;
+}
+.img-three{
+    width: 40%;
+    height: auto;
+}
+
+.product-title{
+    margin-top: 2%;
+    font-size:30px ;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.product2{
+    margin-left: 10%;
+  
 }
