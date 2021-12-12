@@ -98,6 +98,7 @@
 .one{
     margin-top:10%;
 }
+
 .video{
     width: 150%;
     
@@ -139,4 +140,16 @@
 .product2{
     margin-left: 10%;
   
+}
+.virtual{
+    border-top: 1px solid rgb(179, 176, 176);
+    border-bottom: 1px solid rgb(179, 176, 176);
+    margin-top: 10%;
+    /* margin-bottom: 50%; */
+}
+
+.glass {
+    /* height: 50vh; */
+    width: 100%;
+    /* position: absolute; */
 }
