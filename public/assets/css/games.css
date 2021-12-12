@@ -45,7 +45,49 @@
 }
 
 
-.all-games{
+/* .all-games{
     background-color: #000;
     height: 100vh;
+} */
+
+.all-games{
+    padding-top: 60px ;
+    background-color: #000;
+    width: 195%;
+    height: 250vh;
+}
+
+
+.info{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 1px;
+    width: 100%;
+    
+    
+}
+
+
+.info p{
+    font-size: 13px;
+    color: #fff;
+    
+}
+
+.info img {
+    /* height: vh; */
+    margin-left: 15px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+
+.film-section_title{
+color:#fff;
+margin-left: 10px;
+font-family: 'Calistoga', cursive;
+font-size: 25px;
+
 }
