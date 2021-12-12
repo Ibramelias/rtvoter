@@ -145,11 +145,33 @@
     border-top: 1px solid rgb(179, 176, 176);
     border-bottom: 1px solid rgb(179, 176, 176);
     margin-top: 10%;
+    height: 50vh;
     /* margin-bottom: 50%; */
 }
 
+.virt{
+    margin-top: 6%;
+    margin-right: -10%;
+    
+}
+
+.virtual-title{
+    /* margin-top: 5%; */
+    padding-left:10%;
+    font-size: 40px;
+    color:#344854;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.shop{
+    font-size: 15px;
+    color: #344854;
+    text-decoration: none;
+}
+
 .glass {
-    /* height: 50vh; */
-    width: 100%;
-    /* position: absolute; */
+  height:40vh;
+  float:left;
+  margin-right: -50px;
 }
