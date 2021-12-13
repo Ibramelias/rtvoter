@@ -175,3 +175,33 @@
   float:left;
   margin-right: -50px;
 }
+
+.container-future{
+    margin-top: 6%;
+    text-align: center; 
+}
+
+.future{
+    color: #344854;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.mission{
+    color: rgb(77, 73, 73);
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 3%;
+}
+
+.moon{
+    width: 100%;
+    padding: 0 calc(((100% - 528px) / 12) * 1 + 48px);
+    overflow: hidden;
+}
+.moon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
