@@ -27,9 +27,14 @@ $(document).ready(function () {
         getResult(category).then(function (films) {
             films.results.forEach(function (film) {
                 $('#' + category).find('.films-container').append(renderFilmDetails(film.title, imgURL+film.poster_path, film.release_date))
-                // $('#' + category).find('.film-card_poster').append( '<img  src=' + imgURL +  + ">" + "<span>" + "<p class='detalis'>" + film.title + " " + film.release_date + "</P>" +"</span>" )
+                // $('#top-ten').find('.films-container').append( renderFilmDetails(film.title, imgURL+film.poster_path, film.release_date))
+               
             })
         })
     })
   
 })
+
+
+topTen = categories.films.slice(0,10);
+// console.log(topTen);

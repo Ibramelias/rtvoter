@@ -121,6 +121,7 @@
     width: 80%;
     height: auto;
 }
+
 .img-two{
     width: 80%;
     margin-top: 30%;
@@ -129,6 +130,10 @@
 .img-three{
     width: 40%;
     height: auto;
+}
+
+.pic{
+    width: 43%;
 }
 
 .product-title{
