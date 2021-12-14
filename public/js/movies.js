@@ -27,22 +27,10 @@ $(document).ready(function () {
     categories.forEach(function (category) {
         getResult(category).then(function (films) {
             films.results.forEach(function (film) {
-                $('#' + category).find('.swiper-slide').append(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date))
+                $('#' + category).find('.films-container').append(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date))
 
             })
         })
     })
 
 })
-
-
-var swiper = new Swiper(".mySwiper", {
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
