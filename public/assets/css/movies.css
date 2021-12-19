@@ -41,11 +41,6 @@
     font-family: 'Amatic SC', cursive;
 }
 
-.navbtn:hover{
-    color: #fff;
-    border-bottom: 3px solid #0d6efd;
-}
-
 /* all move page */
 
 .all-page{
@@ -62,9 +57,12 @@
 }
 .films-container{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* overflow: scroll; */
+    overflow: hidden;
 }
 
 
@@ -80,6 +78,7 @@
     padding: 15px;
     color: #fff;
     overflow: hidden;
+    overflow: scroll;
 }
 .film-card_title {
     margin: 10px 0;
@@ -101,9 +100,17 @@
 
 
 .film-section_title{
-color:#fff;
+color:#E50914;
 margin-left: 10px;
 font-family: 'Calistoga', cursive;
-font-size: 25px;
+font-size: 35px;
+
+}
+
+
+.film-info_btn{
+    background-color: transparent;
+    color: #fff;
+    border: 0;
 
 }

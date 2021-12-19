@@ -52,7 +52,7 @@
 }
 
 .img{
-    background-image:url('https://scontent-lga3-2.xx.fbcdn.net/v/t39.8562-6/252509574_769584853942762_4631444119178197375_n.png?_nc_cat=102&ccb=1-5&_nc_sid=6825c5&_nc_ohc=ndtGgqAEHuAAX-J9U8n&_nc_ht=scontent-lga3-2.xx&oh=59af1a631c0db2890bf3c6d23ae56647&oe=61B7F254');
+    background-image:url('https://wallpapercave.com/wp/wp2763445.jpg');
     height: 100vh;
     margin-top: 0; 
     padding: 0;
@@ -70,7 +70,6 @@
     margin-left: -20px;
     margin-top: -25px; 
     text-align: center;
- 
 }
 
 .content{
@@ -131,6 +130,18 @@
     width: 40%;
     height: auto;
 }
+
+.img-one:hover{
+    transform: scale(1.1);
+}
+.img-two:hover{
+    transform: scale(1.1);
+}
+.img-three:hover{
+    transform: scale(1.1);
+}
+
+
 
 .pic{
     width: 43%;
@@ -210,3 +221,79 @@
     height: 100%;
     object-fit: cover;
 }
+
+.commitments{
+    padding: 0 calc(((100% - 528px) / 12) * 1 + 48px);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.investments{
+    align-content: flex-start;
+    align-items: flex-start;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 85%;
+
+}
+
+.investments p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.commit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.commit-2{
+    width: 100%;
+    height: 39vh;
+    object-fit: cover;
+}
+
+h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.latest{
+    margin-top: 20%;
+}
+
+.latest-img{
+    width: 90%;
+  
+}
+.latest-img-movie{
+    width: 90%;
+    height: 21vh;
+  
+}
+.latest-img-series{
+    width: 90%;
+    height: 21vh;
+  
+}
+
+..latest-img-movie{
+    width: 90%;
+    height: 21vh;
+  
+}
+
+.more-News{
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
