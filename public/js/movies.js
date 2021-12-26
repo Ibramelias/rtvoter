@@ -57,9 +57,9 @@ $(document).ready(function () {
         var topTen = films.results.slice(0,3)
 
         for (var i = 0; i < topTen.length; i++){
-          var name  = topTen['title']
-          var year = topTen[1].release_date
-          console.log(name)
+          // var name  = topTen(results).title
+          // var year = topTen[1].release_date
+          // console.log(name)
         } 
       
         $('#topTen').append('<p>' + name + '</p>')
