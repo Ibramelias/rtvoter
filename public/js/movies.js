@@ -45,6 +45,7 @@ $(document).ready(function () {
     getResult(category).then(function (films) {
       films.results.forEach(function (film) {
         // console.log(films)
+        
         $('#' + category).find('.films-container').append(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date, film.overview))
         // var overview = film.overview
         // console.log(overview)
@@ -53,6 +54,17 @@ $(document).ready(function () {
         //   modal.find(".overview").append(film.overview)
         // })
       })
+        var topTen = films.results.slice(0,3)
+
+        for (var i = 0; i < topTen.length; i++){
+          var name  = topTen['title']
+          var year = topTen[1].release_date
+          console.log(name)
+        } 
+      
+        $('#topTen').append('<p>' + name + '</p>')
+
+        console.log(topTen)
     })
   })
 })
