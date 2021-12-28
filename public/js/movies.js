@@ -54,17 +54,20 @@ $(document).ready(function () {
         //   modal.find(".overview").append(film.overview)
         // })
       })
+
+        // to get the best movies we need to cut the array so we used slice() ///
         var topTen = films.results.slice(0,3)
+        // create map funtion to get the best top ten movies details like name, year and poster 
+        topTen.map(x => {
+         var topTenName =  x.title
+         var topTenYear = x.release_date.slice(0,4)
+         var topTenPoster = x.poster_path
 
-        for (var i = 0; i < topTen.length; i++){
-          // var name  = topTen(results).title
-          // var year = topTen[1].release_date
-          // console.log(name)
-        } 
-      
-        $('#topTen').append('<p>' + name + '</p>')
-
-        console.log(topTen)
+         console.log(topTenName)
+         console.log(topTenYear)
+         console.log(topTenPoster)
+         $('#topTen').append(topTenName,topTenYear)
+        });
     })
   })
 })
