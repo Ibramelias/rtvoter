@@ -1,33 +1,4 @@
 
-/// scroling down automatically function ///
-
-// $(function() {
-//     $('a[href*=#]').on('click', function(e) {
-//       e.preventDefault();
-//       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//     });
-// });
-
-
-// login PopUp //////
-
-// const open = document.getElementById("open");
-
-// const modal = document.getElementById("modalcontainer");
-
-// const close = document.getElementById("close");
-
-// open.addEventListener("click", () => {
-//     modal.classList.add("show");
-// });
-
-// close.addEventListener('click', () => {
-//     modal.classList.remove("show")
-// })
-
- 
-// Back to top Button // 
-
 // Get the button
 toTop = document.getElementById("topBtn");
 // when the user scrolls down from the top of the document, show the button.
@@ -42,7 +13,6 @@ function scrollFunction () {
 }
 
 // when the user clicks on the button, scroll to the top of the document
-
 function topFunction() {
     document.body.scrollTop = 0; // for safari users 
     document.documentElement.scrollTop = 0; // for other browsers 
@@ -130,9 +100,7 @@ nextButton.addEventListener('click', e => {
 // when i click the nav indicators, move to that slide 
 dotsNav.addEventListener('click' , e => {
     const targetDot = e.target.closest('button');
-
     if(!targetDot) return;
-
     const currentSlide = track.querySelector('.current-slide');
     const currentDot = dotsNav.querySelector('.current-slide');
     const targetIndex = dots.findIndex(dot => dot === targetDot);
@@ -144,12 +112,6 @@ dotsNav.addEventListener('click' , e => {
 
  
 })
-
-
-
-
-
-
 
 
 $(document).ready(function(){
