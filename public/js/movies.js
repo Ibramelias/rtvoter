@@ -69,7 +69,7 @@ $(document).ready(function () {
   // create another function to render tv series 
 
   function renderTvSeries(tvTitle, tvPoster, tvYear) {
-    // tvYear = tvYear.slice(0,4)
+    tvYear = tvYear.slice(0,4)
     const tvSeriesTmeplate = `
         <div class="film-card">
             <div class="film-card_poster">
@@ -133,7 +133,8 @@ $(document).ready(function () {
       method: 'GET'
     }).then(function (results) {
       results.results.forEach(function (tv) {
-        console.log(tv.name)
+        console.log(tv)
+      $("#tvSeries").append(renderTvSeries(tv.name, imgURL + tv.poster_path, tv.first_air_date))
       })
     })
   }
