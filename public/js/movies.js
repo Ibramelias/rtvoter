@@ -6,10 +6,14 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 $(document).ready(function () {
 
-  $(document).on('click', '.film-card', function(){
-    fileName = $(this).text()
-    console.log(fileName)
+  $(document).on('click', '.film-card', function () {
+    filmName = $(this).text()
+    console.log(filmName)
+    $('.modal').modal('show').find('.modal-body').append()
   })
+  
+
+ 
 
   function renderFilmDetails(filmTitle, filmPoster, filmYear) {
     filmYear = filmYear.slice(0, 4);
@@ -23,14 +27,8 @@ $(document).ready(function () {
         </div>
         `
     return filmTmeplate;
-    
-  }
 
-$(".film-section_title").click(function(){
-  namee = $.this().val()
-  // namee = namee.this().text()
-  console.log(namee)
-})
+  }
 
 
   function getResult(category) {
