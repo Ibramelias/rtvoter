@@ -5,7 +5,13 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 
 $(document).ready(function () {
-  function renderFilmDetails(filmTitle, filmPoster, filmYear, filmOverview) {
+
+  $(document).on('click', '.film-card', function(){
+    fileName = $(this).text()
+    console.log(fileName)
+  })
+
+  function renderFilmDetails(filmTitle, filmPoster, filmYear) {
     filmYear = filmYear.slice(0, 4);
     const filmTmeplate = `
         <div class="film-card">
@@ -13,90 +19,19 @@ $(document).ready(function () {
                 <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
             </div>
             <h2 class="film-card_title">${filmTitle}</h2>
-            <div class="film-card_date">${filmYear}
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="film-card_date">${filmYear}</div>
         </div>
         `
     return filmTmeplate;
+    
   }
 
-  // create funtion to render top 12 movie //
-  function renderToptenFilmDetails(filmTitle, filmPoster, topTenYear) {
-    topTenYear = topTenYear.slice(0, 4)
-    const topTenfilmTmeplate = `
-        <div class="film-card">
-            <div class="film-card_poster">
-                <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
-            </div>
-            <h2 class="film-card_title">${filmTitle}</h2>
-            <div class="film-card_date">${topTenYear}
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        `
-    return topTenfilmTmeplate;
-  }
+$(".film-section_title").click(function(){
+  namee = $.this().val()
+  // namee = namee.this().text()
+  console.log(namee)
+})
 
-  // create another function to render tv series 
-
-  function renderTvSeries(tvTitle, tvPoster, tvYear) {
-    tvYear = tvYear.slice(0, 4)
-    const tvSeriesTmeplate = `
-        <div class="film-card">
-            <div class="film-card_poster">
-                <img src=${tvPoster} alt=${tvTitle} class="img-fluid"/>
-            </div>
-            <h2 class="film-card_title">${tvTitle}</h2>
-            <div class="film-card_date">${tvYear}
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        `
-    return tvSeriesTmeplate;
-  }
 
   function getResult(category) {
     // var queryURL = "https://www.omdbapi.com/?s=" + category + "&apikey=trilogy";
@@ -111,7 +46,8 @@ $(document).ready(function () {
       // to get the best movies we need to cut the array so we used slice() ///
       var topTen = films.results.slice(0, 3)
       // create map funtion to get the best top ten movies details like name, year and poster 
-      topTen.map(x => { $('#topTen').append(renderToptenFilmDetails(x.title, imgURL + x.poster_path, x.release_date)) });
+      topTen.map(x => { $('#topTen').append(renderFilmDetails(x.title, imgURL + x.poster_path, x.release_date)) });
+      console.log(films)
     })
   })
   // create another funtion to get TV series 
@@ -122,11 +58,12 @@ $(document).ready(function () {
       method: 'GET'
     }).then(function (results) {
       results.results.forEach(function (tv) {
-        $("#tvSeries").append(renderTvSeries(tv.name, imgURL + tv.poster_path, tv.first_air_date))
+        $("#tvSeries").append(renderFilmDetails(tv.name, imgURL + tv.poster_path, tv.first_air_date))
       })
     })
   }
   getTvResults()
 
-
 })
+
+

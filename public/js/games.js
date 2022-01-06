@@ -1,34 +1,40 @@
 
-var categories = ['popular','upcoming', 'top_rated','now_playing'];
+$(document).ready(function () {
 
-$(document).ready(function() {
-// function getResult(category){
-//     var queryURL = "https://fortnite-api.p.rapidapi.com/pveinfo" + category + "?api_key=d900d6eecdmsh4d24d7bb04a0f4dp1badabjsnad948b39d7fe" ;
-//     return$.get({url :queryURL});
-// }
-// categories.forEach(function(category){
-//     getResult(category).then(function(response){
-//         console.log(response)
-//         response.results.forEach(function(games){
-//             $('#' + category).find().append()
-//         })
-//     })
-// })
+	// function renderGamesDetails(gameTitle, gamePoster, gameYear) {
+	// 	// filmYear = filmYear.slice(0, 4);
+	// 	const gameTmeplate = `
+	// 		<div class="game-card">
+	// 			<div class="games-card_poster">
+	// 				<img src=${gamePoster} alt=${gameTitle} class="img-fluid"/>
+	// 			</div>
+	// 			<h2 class="game-card_title">${gameTitle}</h2>
+	// 			// <div class="game-card_date">${gameYear}</div>
+	// 		</div>
+	// 		`
+	// 	return gameTmeplate;
+	//   }
 
-const settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://rawg-video-games-database.p.rapidapi.com/games/%7Bgame_pk%7D",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
-		"x-rapidapi-key": "d900d6eecdmsh4d24d7bb04a0f4dp1badabjsnad948b39d7fe"
+
+	var rapidapiApiKey =  "d900d6eecdmsh4d24d7bb04a0f4dp1badabjsnad948b39d7fe";
+	var rapidapiHost = "free-to-play-games-database.p.rapidapi.com";
+
+	function getGames () {
+		queryUrl = "https://free-to-play-games-database.p.rapidapi.com/api/filter?tag=3d.mmorpg.fantasy.pvp&platform=pc";
+		$.ajax({
+			url: queryUrl,
+			method:"GET",
+			header:{rapidapiHost,rapidapiApiKey}
+		}).then(function(response){
+			console.log(response)
+			// response.map(x => {
+			// 	title = x.title
+			// 	console.log(title)
+			// 	// $('.all-games').append(renderGamesDetails(x.title))
+			// })
+		})
 	}
-};
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+	getGames()
 
 })
 

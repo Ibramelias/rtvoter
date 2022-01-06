@@ -1,4 +1,7 @@
-
+body{
+    width: auto;
+    height: auto;
+}
 /* Navbar */
 
 .navbar{
@@ -6,6 +9,7 @@
     font-family: 'Bebas Neue', cursive;
     /* font-weight: bold; */
     font-size: 25px;
+    background-color: rgb(238, 236, 236);
  
 }
 
@@ -50,7 +54,7 @@
 .film-section {
     position: relative;
     width: 100%;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     margin-left: 1px;
     margin-bottom: 3%;
@@ -61,8 +65,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    /* overflow: scroll; */
-    overflow: hidden;
+    overflow: scroll;
+    /* overflow: hidden; */
 }
 
 
@@ -79,6 +83,8 @@
     border: 1px rgb(213, 210, 210) solid;
     border-radius: 10px;
     margin: 4px;
+    cursor: pointer;
+    
 }
 
 .film-card_title {
