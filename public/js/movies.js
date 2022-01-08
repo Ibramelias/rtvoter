@@ -6,14 +6,13 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 $(document).ready(function () {
 
-  $(document).on('click', '.film-card', function () {
-    filmName = $(this).text()
+  $(document).on('click', '.film-card', function foo () {
+    filmName = $(this)
+    title = this.innerText
     console.log(filmName)
-    $('.modal').modal('show').find('.modal-body').append()
+    
+    $('.modal').modal('show')
   })
-  
-
- 
 
   function renderFilmDetails(filmTitle, filmPoster, filmYear) {
     filmYear = filmYear.slice(0, 4);
@@ -30,6 +29,20 @@ $(document).ready(function () {
 
   }
 
+  function renderFilmModal(filmTitle, filmPoster, filmYear) {
+    // filmYear = filmYear.slice(0, 4);
+    const modalTmeplate = `
+        <div class="film-modal">
+            <div class="film-card_poster-modal">
+                <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
+            </div>
+            <h2 class="film-card_title-modal">${filmTitle}</h2>
+            <div class="film-card_date-modal">${filmYear}</div>
+        </div>
+        `
+    return modalTmeplate;
+
+  }
 
   function getResult(category) {
     // var queryURL = "https://www.omdbapi.com/?s=" + category + "&apikey=trilogy";

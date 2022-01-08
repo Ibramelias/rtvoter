@@ -83,8 +83,11 @@ body{
     border: 1px rgb(213, 210, 210) solid;
     border-radius: 10px;
     margin: 4px;
-    cursor: pointer;
-    
+    cursor: pointer; 
+}
+
+.film-card:hover{
+    border: 2px #E50914 solid;;
 }
 
 .film-card_title {
