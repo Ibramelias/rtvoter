@@ -6,18 +6,10 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 $(document).ready(function () {
 
-  $(document).on('click', '.film-card', function foo () {
-    filmName = $(this)
-    title = this.innerText
-    console.log(filmName)
-    
-    $('.modal').modal('show')
-  })
-
-  function renderFilmDetails(filmTitle, filmPoster, filmYear) {
+  function renderFilmDetails(filmTitle, filmPoster, filmYear, filmid) {
     filmYear = filmYear.slice(0, 4);
     const filmTmeplate = `
-        <div class="film-card">
+        <div class="film-card data-filmid='${filmid}' ">
             <div class="film-card_poster">
                 <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
             </div>
@@ -25,24 +17,18 @@ $(document).ready(function () {
             <div class="film-card_date">${filmYear}</div>
         </div>
         `
+        // console.log(filmId)
     return filmTmeplate;
 
   }
 
-  function renderFilmModal(filmTitle, filmPoster, filmYear) {
-    // filmYear = filmYear.slice(0, 4);
-    const modalTmeplate = `
-        <div class="film-modal">
-            <div class="film-card_poster-modal">
-                <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
-            </div>
-            <h2 class="film-card_title-modal">${filmTitle}</h2>
-            <div class="film-card_date-modal">${filmYear}</div>
-        </div>
-        `
-    return modalTmeplate;
-
-  }
+  $(document).on('click', '.film-card', function () {
+    filmId = $('.film-card')
+    filmId.attr('data-filmid')
+    filmName = $(this).filmId
+    console.log(filmName)
+    $('.modal').modal('show').append()
+  })
 
   function getResult(category) {
     // var queryURL = "https://www.omdbapi.com/?s=" + category + "&apikey=trilogy";
@@ -52,7 +38,9 @@ $(document).ready(function () {
   categories.forEach(function (category) {
     getResult(category).then(function (films) {
       films.results.forEach(function (film) {
-        $('#' + category).find('.films-container').append(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date, film.overview))
+        $('#' + category).find('.films-container').append(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date, film.id))
+        // console.log(film.id.title)
+       
       })
       // to get the best movies we need to cut the array so we used slice() ///
       var topTen = films.results.slice(0, 3)
