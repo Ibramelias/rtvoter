@@ -3,23 +3,6 @@
     padding: 0;
 }
 
-
-/* nav{
-    padding-right: 20px;
-    padding-left: 20px;
-} */
-
-/* #searchEng {
-    background-color: transparent;
-    color: rgb(247, 173, 36);
-} */
-
-/* #mic{
-    padding-right: 10px;
-    padding-top: 5px;
-} */
-
-
 .modal-container{
     background-color: rgb(0, 0, 0, 0.3);
     display: flex;
@@ -50,79 +33,6 @@
 }
 
 
-/* 
-.navbar{
-    height: 10vh;
-    font-family: 'Abril Fatface', cursive;
-    font-weight: bold;
-    font-size: 18px;
- 
-} */
-
-
-
-/* 
-.nav-item:hover{
-    color: #000;
-    background-color: rgb(247, 173, 36);
-    border-radius: 3px;
-} */
-
-/* .nav-item:active{
-    background-color:rgb(91, 194, 91);
-} */
-
-/* @media only screen and (max-width: 991px) {
-    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        background-color: #00439c;
-    } */
-
-    /* .navbar{
-        height: 0;
-        margin-top: 0;
-    } */
-/* } */
- 
-
-
-/* .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: rgb(240, 235, 235);
-} */
-
-
-/* .navbar-light .navbar-brand {
-    color: rgb(22, 145, 88);
-    font-size: 35px;
-    
-} */
-
-
-
-
-/* .navbar-light .navbar-brand:hover{
-    color: rgb(22, 145, 88)
-} */
-
-
-
-/* .logo{
-    color: #fff;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-} */
-
-/* .navbtn{
-    margin-left: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Amatic SC', cursive;
-}
-
-.navbtn:hover{
-    color: #fff;
-    border-bottom: 3px solid #0d6efd;
-} */
 
 .navbar{
     height: 10vh;
@@ -131,9 +41,6 @@
     font-size: 25px;
  
 }
-
-
-
 
 .nav-item:hover{
     color: #000;
@@ -149,15 +56,11 @@
     color: rgb(240, 235, 235);
 }
 
-
 .navbar-light .navbar-brand {
     color: #E50914;
     font-size: 50px;
     
 }
-
-
-
 
 .navbar-light .navbar-brand:hover{
     color: #E50914;
@@ -281,7 +184,7 @@
 }
 
 .header{
-    color: rgb(171, 169, 169);
+    color: #fff;
     font-weight: bold;
     font-size: 80px;
     font-family: 'Fredericka the Great', cursive;
@@ -305,7 +208,7 @@
 
 .btn:hover{
     background-color: transparent;
-    color: rgb(247, 173, 36);
+    color: #E50914;
 }
 .btn:active{
     background-color: transparent;
@@ -695,13 +598,12 @@ h2{
     /* text-align: left; */
 }
 
-
-#close{
+/* 
+.close{
     background-color: #47a386;
     border: 0;
     border-radius: 5px;
-
-}
+} */
 
 .close{
     display:list-item;

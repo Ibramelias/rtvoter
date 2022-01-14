@@ -24,7 +24,7 @@ $(document).ready(function () {
 
   $(document).on('click', '.film-card', function () {
     filmId = $('.film-card')
-    filmId.attr('data-filmid')
+    filmId.last().attr('data-filmid')
     filmName = $(this).filmId
     console.log(filmName)
     $('.modal').modal('show').append()
