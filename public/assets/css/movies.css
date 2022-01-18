@@ -4,46 +4,7 @@ body{
 }
 /* Navbar */
 
-.navbar{
-    height: 10vh;
-    font-family: 'Bebas Neue', cursive;
-    /* font-weight: bold; */
-    font-size: 25px;
-    background-color: rgb(238, 236, 236);
- 
-}
 
-.nav-item:hover{
-    color: #000;
-    background-color: #E50914;
-    border-radius: 3px;
-}
-
-.nav-item:active{
-    background-color: #E50914;
-}
-
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
-    color: #000;
-}
-
-.navbar-light .navbar-brand {
-    color: #E50914;
-    font-size: 50px;
-    
-}
-
-.navbar-light .navbar-brand:hover{
-    color: #E50914;
-}
-
-.navbtn{
-    margin-left: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 40px;
-    font-family: 'Amatic SC', cursive;
-}
 
 /* all move page */
 
@@ -116,3 +77,33 @@ margin-left: 10px;
 font-family: 'Calistoga', cursive;
 font-size: 45px;
 }
+
+
+@media only screen and (max-width: 1446px){
+    .film-card{
+     width: 15%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .film-card{
+     width: 20%;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .film-card_date{
+     margin-top: 5%;
+    }
+    .film-card{
+        width: 20%;
+       }
+}
+
+@media only screen and (max-width: 800px){
+    .film-card{
+     width: 30%;
+    }
+   
+}
+
