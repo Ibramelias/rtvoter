@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 
   function renderModalDetails(filmTitle, filmPoster, filmYear, filmOverView) {
-    filmYear = filmYear.slice(0, 4);
+    // filmYear = filmYear.slice(0, 4);
     const modalTmeplate = `
         <div class="film-car">
             <div class="film-card_poster">
@@ -17,7 +17,6 @@ $(document).ready(function () {
             </div>
             <h2 class="film-card_title">${filmTitle}</h2>
             <div class="film-card_date">${filmYear}</div>
-            <p ">${filmOverView}</p>
         </div>
         `
     return modalTmeplate;
@@ -34,7 +33,7 @@ $(document).ready(function () {
       console.log(response)
       // var MovieTitle = response.title
       // console.log(MovieTitle)
-      $('.modal').modal("show").find('.modal-body').append(renderModalDetails(response.title, response.year, response.overview))
+      $('.modal-fullscreen').modal("show").append(renderModalDetails(response.title))
     })
   
     
