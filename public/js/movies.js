@@ -8,41 +8,51 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 $(document).ready(function () {
 
 
-  function renderModalDetails(filmTitle, filmPoster, filmYear, filmOverView) {
-    // filmYear = filmYear.slice(0, 4);
+  function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage) {
+    modalYear = modalYear.slice(0, 4);
     const modalTmeplate = `
-        <div class="film-car">
-            <div class="film-card_poster">
-                <img src=${filmPoster} alt=${filmTitle} class="img-fluid"/>
+        <div class="film-modal">
+        <h2 class="modal_title">${modalTitle}</h2>
+        <p>${modalTagline}</p>
+            <div class="modal_poster">
+                <img src=${modalPoster} alt=${modalTitle} class="img-fluid"/>
             </div>
-            <h2 class="film-card_title">${filmTitle}</h2>
-            <div class="film-card_date">${filmYear}</div>
+            <div class="modal_date"><strong>Released:</strong> ${modalYear}</div>
+            <div class="modal_overview"><strong>Movie overview:</strong> ${modalOverview}</div>
+            <a  href="${modalHomepage}" class="modal_overview"><strong>Get It </strong>
         </div>
         `
     return modalTmeplate;
   }
 
-  $(document).on('click', '.film-card', function (filmId) {
+  if(".modal" === false){
+    $('.modal').empty()
+  }
+
+
+  $(document).on('click', '.film-card', function() {
     var filmId = $(this).attr('data-id')
-    console.log(filmId)
+    // console.log(filmId)
     queryURL = 'https://api.themoviedb.org/3/movie/' + filmId + '?api_key=881f34c3b978ff91294912c9151e1ff4&language=en-US';
     $.ajax({
-      url:queryURL,
-      method:"GET"
-    }).then(function(response){
-      console.log(response)
-      // var MovieTitle = response.title
-      // console.log(MovieTitle)
-      $('.modal-fullscreen').modal("show").append(renderModalDetails(response.title))
+      url: queryURL,
+      method: "GET"
+    }).then(function (res) {
+      console.log(res)
+      $('.modal').modal('show').find('.modal-body').append((renderModalDetails(res.title, imgURL + res.poster_path, res.release_date, res.overview, res.tagline, res.homepage)))
+   
     })
-  
-    
   })
+
+  $(document).on('click', '.modal', function(){
+    $('.modal-body').empty()
+  })
+
 
 
   function renderFilmDetails(filmTitle, filmPoster, filmYear, filmId) {
     filmYear = filmYear.slice(0, 4);
- 
+
     const filmTmeplate = `
         <div class="film-card" data-id=${filmId}>
             <div class="film-card_poster">

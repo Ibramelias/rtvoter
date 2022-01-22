@@ -70,6 +70,15 @@ body{
     margin-top: auto;
 }
 
+.modal-content{
+    height: 70vh;
+    width: 200;
+}
+
+.modal-dialog{
+    width: 200;
+}
+
 
 .film-section_title{
 color:#E50914;
