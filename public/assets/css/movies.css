@@ -72,11 +72,10 @@ body{
 
 .modal-content{
     height: 70vh;
-    width: 200;
 }
 
-.modal-dialog{
-    width: 200;
+.modal{
+    width: 10;
 }
 
 

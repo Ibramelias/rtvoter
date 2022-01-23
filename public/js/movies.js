@@ -8,12 +8,13 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 $(document).ready(function () {
 
 
-  function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage) {
+  function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage, genres) {
     modalYear = modalYear.slice(0, 4);
     const modalTmeplate = `
         <div class="film-modal">
         <h2 class="modal_title">${modalTitle}</h2>
         <p>${modalTagline}</p>
+        <div>${genres}</div>
             <div class="modal_poster">
                 <img src=${modalPoster} alt=${modalTitle} class="img-fluid"/>
             </div>
@@ -38,8 +39,14 @@ $(document).ready(function () {
       url: queryURL,
       method: "GET"
     }).then(function (res) {
-      console.log(res)
-      $('.modal').modal('show').find('.modal-body').append((renderModalDetails(res.title, imgURL + res.poster_path, res.release_date, res.overview, res.tagline, res.homepage)))
+      var genres = res.genres
+      for(var i = 0; i < genres.length; i++){
+        var gen = genres[i].name
+        console.log(gen)
+      }
+
+      // console.log(genres)
+      $('.modal').modal('show').find('.modal-body').append((renderModalDetails(res.title, imgURL + res.poster_path, res.release_date, res.overview, res.tagline, res.homepage, gen)))
    
     })
   })
@@ -75,18 +82,13 @@ $(document).ready(function () {
     getResult(category).then(function (films) {
       films.results.forEach(function (film) {
         $('#' + category).find('.films-container').prepend(renderFilmDetails(film.title, imgURL + film.poster_path, film.release_date, film.id))
-        // console.log(film.id)
-        // $('.film-card').attr("data-id")
       })
-      // $('.film-card').attr("data-id", filmId)
-      // to get the best movies we need to cut the array so we used slice() ///
       var topTen = films.results.slice(0, 3)
       // create map funtion to get the best top ten movies details like name, year and poster 
       topTen.map(x => { $('#topTen').prepend(renderFilmDetails(x.title, imgURL + x.poster_path, x.release_date)) });
       console.log(films)
     })
   })
-  // create another funtion to get TV series 
   function getTvResults() {
     var queryURL1 = 'https://api.themoviedb.org/3/tv/popular?api_key=881f34c3b978ff91294912c9151e1ff4&language=en-US'
     $.ajax({
@@ -94,7 +96,7 @@ $(document).ready(function () {
       method: 'GET'
     }).then(function (results) {
       results.results.forEach(function (tv) {
-        $("#tvSeries").prepend(renderFilmDetails(tv.name, imgURL + tv.poster_path, tv.first_air_date))
+        $("#tvSeries").prepend(renderFilmDetails(tv.name, imgURL + tv.poster_path, tv.first_air_date, tv.id))
       })
     })
   }
