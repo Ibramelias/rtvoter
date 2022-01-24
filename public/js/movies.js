@@ -20,7 +20,7 @@ $(document).ready(function () {
             </div>
             <div class="modal_date"><strong>Released:</strong> ${modalYear}</div>
             <div class="modal_overview"><strong>Movie overview:</strong> ${modalOverview}</div>
-            <a  href="${modalHomepage}" class="modal_overview"><strong>Get It </strong>
+            <a  href="${modalHomepage}" target="_blank" class="modal_overview"><strong>Get It </strong>
         </div>
         `
     return modalTmeplate;
@@ -55,6 +55,13 @@ $(document).ready(function () {
     $('.modal-body').empty()
   })
 
+
+  $(document).on('click', '.modal_overview', function(){
+    if('.modal_overview' === false){
+      $('.modal').modal('hidden')
+    }
+    
+  })
 
 
   function renderFilmDetails(filmTitle, filmPoster, filmYear, filmId) {
