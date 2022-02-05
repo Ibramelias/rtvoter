@@ -47,8 +47,7 @@
 
 
 .new-games{
-    margin-bottom: 5%;
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     font-family: 'Orbitron', sans-serif;
 
@@ -126,7 +125,6 @@
 
 
 /* title */
-
 .title{
     margin: 10%;
 }
@@ -186,55 +184,34 @@
 
 
 /* //// */
-
-
 .container-adv{
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
+.game-info{
+    justify-content: space-around;
 
-.card-1{
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/f/f8/ACValhalla.jpg");
-    height: 50vh;
-    background-size: cover;
-    margin-left: 3px;
-    border-radius: 10px;
-    margin-right: 8%;
-}
-
-.card-2{
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/28877b101249425.5f1a56032f2d6.png");
-    height: 50vh;
-    background-size: cover;
-    border-radius: 10px;
-    margin-right: 8%;
-    background-position: 50% 50%;
-}
-
-.card-3{
-    background-image: url("https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelsavengers_lob_crd_01.jpg");
-    height: 50vh;
-    background-size: cover;
-    border-radius: 10px;
-    margin-right: 8%;
+    margin-top: 5%;
 }
 
 
-.card-description{
-    width: 27%;
-    margin-top: 2%;
-    color: #000;
-    
+.game-image{
+    border-radius: 5px;
+    width: 100%;
 }
 
-.card-description2{
-    /* padding-left: 3%; */
-    margin-top: 2%;
-    color: #000;
+.game-discreption{
+    margin-top: 5%;
+    font-size: 15px;
+    text-align: justify;
 }
+
 
 /* features */
+.contanier-features{
+    margin-top: 10%;
+}
 
 .container-why{
     margin-top: 5%;
@@ -254,19 +231,17 @@
 }
 
 .tools{
-    align-content: center;
-    padding-left: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
 }
 
-.conitaner-grp{
-    align-content: center;
-    margin-top: 5%;
-    /* margin-left: -5%;  */
-    
-}
+
+
 
 .items{
     margin-left: 4%;
+    text-align: initial;
 }
 
 
@@ -276,22 +251,27 @@ h2{
 }
 
 .des{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .outline{
     font-size: 35px;
-    color: #eb5757;
+    color: #00439c;
     font-weight: bold;
 }
 /*  coming soon  */
 
-.container{
+/* .container{
     margin-top: 7%;
+} */
+
+.coming-soon{
+    margin-top: 15%;
+    height: auto;
 }
 
 .header-coming{
-    /* margin-bottom: 20px; */
+    margin-bottom: 3%;
     text-align: left;
     /* margin-left: -10%; */
     font-size: 40px;
@@ -300,14 +280,10 @@ h2{
 }
 
 /* /////////   carosuel slide-show //////////// */
-
 .carousel{
     position: relative;
-    height: 400px;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 20%;
-    
+    height: 500px;
+    width: 100%;
 }
 
 .carsoule__image{
@@ -318,7 +294,6 @@ h2{
     
     
 }
-
 .carsouel__track-container {
     background-color: lightgreen;
     /* padding: 10px; */
@@ -390,13 +365,15 @@ h2{
 /* New devices */
 
 .latest-device{
-    font-size: 50px;
-    font-family: 'Patua One', cursive;
+   margin-top: 35%;
+}
+
+.latest-device-title{
     text-align: left;
 }
 
 .last{
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 

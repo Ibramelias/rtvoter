@@ -1,12 +1,9 @@
-
-
 // defined variables // 
 var categories = ['popular', 'upcoming', 'top_rated', 'now_playing'];
 var imgURL = "https://image.tmdb.org/t/p/w154";
 
 // jquery function // 
 $(document).ready(function () {
-
   // this function is to render Movie model for more details 
   function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage, genres) {
     modalYear = modalYear.slice(0, 4);
@@ -26,10 +23,6 @@ $(document).ready(function () {
     return modalTmeplate;
   }
 
-  // if(".modal" === false){
-  //   $('.modal').empty()
-  // }
-
   // this function using ($this) to get the movie we choice and search on themoviedb by filmId
   $(document).on('click', '.film-card', function () {
     var filmId = $(this).attr('data-id')
@@ -46,7 +39,6 @@ $(document).ready(function () {
       }
       // this line is to append what we choice from db 
       $('.modal').modal('show').find('.modal-body').append((renderModalDetails(res.title, imgURL + res.poster_path, res.release_date, res.overview, res.tagline, res.homepage, gen)))
-
     })
   })
 
