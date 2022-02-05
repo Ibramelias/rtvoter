@@ -59,30 +59,15 @@
 
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/nav.css">
-    
+
     <title>Let's Play</title>
 </head>
 
 <body>
     <!-- Nav bar  -->
-
     <div class="main">
-        <!-- <nav class="bar ">
-            <div class="navbar row">
-                <di class="col-3">
-                    <p class="logo">Let's Play</p>
-                </di>
-                <div class="col-5">
-                    <ul>
-                        <a class="navbtn" href="#">Home</a>
-                        <a class="navbtn" href="#">About</a>
-                        <a class="navbtn" href="#">Games</a>
-                        <a class="navbtn" href="#">Box Office</a>
-                        <a class="navbtn" href="#">Login</a>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
+
+        <!-- Nav bar  -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <h1 class="navbar-brand">METAFLIX</h1>
@@ -105,33 +90,18 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="movies.html">Movies</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
                         <li class="nav-item">
                             <a class="nav-link active" href="login.html" tabindex="-1" aria-disabled="true">Login</a>
                         </li>
                     </ul>
-                    <!-- <div class="d-flex search">
-                        <input class="form-control me-2" type="search" id="textbox" placeholder="Search in Google"
-                            aria-label="Search">
-                        <span type="button" id='start-btn'>🎙️</span>
-                        <button class="btn-search" type="submit">Search</button>
-                    </div> -->
                 </div>
             </div>
         </nav>
 
-
+        <!-- this button to back to top in the home page -->
         <button onClick="topFunction()" id="topBtn"> ^ </button>
+
+        <!-- game of the month section with music buttons -->
         <div class="title">
             <h1 class='header'>Call Of Duty</h1>
             <p class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quae, ipsa porro ullam
@@ -140,9 +110,11 @@
             <div class="row buttons">
                 <p id="play" class='col-3 btn btn-primary'>Experince with music</p>
                 <p id="pause" class='col-3 btn btn-primary'>Pause</p>
-                <p type="buttons" class='col-3 btn btn-primary'>Leran more</p>
+                <p type="buttons" class='col-3 btn btn-primary'>Learn more</p>
             </div>
         </div>
+
+        <!-- scroll down button  -->
         <section id="section06" class="demo">
             <a href="#new-section"><span></span>Scroll</a>
         </section>
@@ -154,6 +126,7 @@
             </div>
         </div>
 
+        <!-- new games section  -->
         <div class="container">
             <div class="row">
                 <div class="col-3 card-1"></div>
@@ -215,9 +188,13 @@
             </div>
         </div>
     </div>
+
+    <!-- upcoming games section -->
     <div class='container'>
         <h1 class='header-coming'>coming soon</h1>
     </div>
+
+    <!-- carousel to display upcoming games images -->
     <div class="carousel">
         <button class="carsouel__button carousel__button--left is--hidden">
             <img src="assets/pics/left-arrow.png" alt="">
@@ -244,6 +221,8 @@
             <button class="carsoule__indeicator"></button>
         </div>
     </div>
+
+    <!-- this section for latest device  -->
     <div class="container">
         <div class="latest-device-title">
             <h1 class='latest-device'>Latest Devices</h1>
@@ -270,16 +249,14 @@
             </div>
         </div>
     </div>
+
+    <!-- this section for social media icons -->
     <div class="follow-us">
         <h1 class="follow-us-title">
             you can follow us on
         </h1>
-        <!-- <ul class="follow-us-icon">
-            <li class="icons"></li>
-            <li class="icons"></li>
-            <li class="icons"></li>
-            <li class="icons"></li>
-        </ul> -->
+
+        <!-- social media icons -->
         <div class="container">
             <div class="effect aeneas">
                 <div class="buttons">
@@ -300,54 +277,50 @@
                 </div>
             </div>
         </div>
-        <footer class='end'>
-            <div class="row">
-                <div class="col-3">
-                    <a class='close' href="">Support</a>
-                    <a class='close' href="">Privacy policy</a>
-                    <a class='close' href="">Website terms of use</a>
-                    <a class='close' href="">Playstation Studio</a>
-                </div>
-                <div class="col-3">
-                    <a class='close' href="">Legal</a>
-                    <a class='close' href="">About SIE</a>
-                    <a class='close' href="">Contact us</a>
-                    <a class='close' href="">Playstation and enviroment</a>
-                </div>
-                <div class="col-3">
-                    <a class='close' href="">Health warning</a>
-                    <a class='close' href="">About ratings</a>
-                    <a class='close' href="">PSN terms of service</a>
-                    <a class='close' href="">PS store cancellation policy</a>
-                </div>
-                <div class="col-3">
-                    <a class='close' href="">Careers</a>
-                    <a class='close' href="">Site map</a>
-                    <a class='close' href="">Developers</a>
-                    <a class='close' href="">Press release</a>
-                </div>
+    </div>
+
+    <!-- this section for footer of the home page  -->
+    <footer class='end'>
+        <div class="row">
+            <div class="col-3">
+                <a class='close' href="">Support</a>
+                <a class='close' href="">Privacy policy</a>
+                <a class='close' href="">Website terms of use</a>
+                <a class='close' href="">Playstation Studio</a>
             </div>
-        </footer>
+            <div class="col-3">
+                <a class='close' href="">Legal</a>
+                <a class='close' href="">About SIE</a>
+                <a class='close' href="">Contact us</a>
+                <a class='close' href="">Playstation and enviroment</a>
+            </div>
+            <div class="col-3">
+                <a class='close' href="">Health warning</a>
+                <a class='close' href="">About ratings</a>
+                <a class='close' href="">PSN terms of service</a>
+                <a class='close' href="">PS store cancellation policy</a>
+            </div>
+            <div class="col-3">
+                <a class='close' href="">Careers</a>
+                <a class='close' href="">Site map</a>
+                <a class='close' href="">Developers</a>
+                <a class='close' href="">Press release</a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- javascript links  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 
-
-
-
-
-
-        <!-- javascript links  -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-            crossorigin="anonymous"></script>
-        <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
-
-        <script src="js/file.js"></script>
-        <script src="js/speech.js"></script>
-        <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+    <!-- js file links -->
+    <script src="js/file.js"></script>
+    <script src="js/speech.js"></script>
 
 
 </body>
