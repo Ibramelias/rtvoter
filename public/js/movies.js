@@ -82,7 +82,6 @@ $(document).ready(function () {
 
       // this section is to render only  12 movies from db use slice function to cut what we want from return result
       var topTen = films.results.slice(0, 3)
-
       // create map funtion to get the best top ten movies details like name, year and poster 
       topTen.map(x => { $('#topTen').prepend(renderFilmDetails(x.title, imgURL + x.poster_path, x.release_date)) });
     })
@@ -103,5 +102,4 @@ $(document).ready(function () {
   getTvResults()
 
 })
-
 
