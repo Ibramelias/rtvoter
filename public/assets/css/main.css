@@ -1,0 +1,79 @@
+:root{
+    --white: #fff;
+    --black: #000;
+    --lightGreen: rgb(144,238,144);
+    --blue100: #00439c;
+    --blue50: #3b5998;
+    --blue40: #007bb6;
+    --blue30: #00aced;
+    --blue20: #1ab7ea;
+    --red100: #E50914;
+    --red80: #cb2027;
+    --red30: #bc2a8d;
+    --orange70: #dd4b39;
+}
+
+/* vav bar  */
+.navbar{
+    height: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    background-color: rgb(238, 236, 236);
+}
+.nav-item:hover{
+    background-color: var(--red100);
+    border-radius: 3px;
+}
+.nav-item:active{
+    background-color: var(--red100);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show .nav-link {
+    color: var(--black);
+} 
+.navbar-nav:hover .nav-link.active:hover {
+    color: var(--white);
+} 
+.navbar-light .navbar-brand {
+    color: var(--red100);
+    font-size: 50px;  
+}
+
+
+/* Footer */
+.end{
+    background-color: var(--blue100);
+    width: 100%;
+    height: 20vh;
+    padding-top:30px;
+}
+.close{
+    display:list-item;
+    list-style: none;
+    padding-top: 10px;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 11px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 30%;
+}
+.close:hover{
+    color: var(--white);
+}
+
+/* /////// Scroll button ////////*/
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    color: var(--red100);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    display: none;
+}

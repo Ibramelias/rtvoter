@@ -2,12 +2,12 @@
 // Get the button
 toTop = document.getElementById("topBtn");
 // when the user scrolls down from the top of the document, show the button.
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
-function scrollFunction () {
-    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         toTop.style.display = "block";
-    }else{
+    } else {
         toTop.style.display = "none";
     }
 }
@@ -43,18 +43,18 @@ const updateDot = (currentDot, targetDot) => {
 
 const setlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
-    
+
 };
 
 const hideShowArrows = (prevButton, nextButton, slides, targetIndex) => {
 
-    if(targetIndex === 0) {
+    if (targetIndex === 0) {
         prevButton.classList.add('is--hidden');
         nextButton.classList.remove('is--hidden');
-    } else if(targetIndex === slides.length -1 ) {
+    } else if (targetIndex === slides.length - 1) {
         prevButton.classList.remove('is--hidden');
         nextButton.classList.add('is--hidden');
-    } else{
+    } else {
         prevButton.classList.remove('is--hidden');
         nextButton.classList.remove('is--hidden')
     }
@@ -62,22 +62,22 @@ const hideShowArrows = (prevButton, nextButton, slides, targetIndex) => {
 
 slides.forEach(setlidePosition);
 
-const moveToSlide = (track, currentSlide, targetSlide ) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left +')';
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 
 }
 
 // when i click left, move slides to left // 
-prevButton.addEventListener('click' , e => {
+prevButton.addEventListener('click', e => {
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
-    moveToSlide(track , currentSlide , prevSlide);
+    moveToSlide(track, currentSlide, prevSlide);
     updateDot(currentDot, prevDot)
     hideShowArrows(prevButton, nextButton, slides, prevIndex);
 })
@@ -90,7 +90,7 @@ nextButton.addEventListener('click', e => {
     const currentDot = dotsNav.querySelector('.current-slide')
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide)
-  
+
 
     moveToSlide(track, currentSlide, nextSlide);
     updateDot(currentDot, nextDot);
@@ -98,9 +98,9 @@ nextButton.addEventListener('click', e => {
 })
 
 // when i click the nav indicators, move to that slide 
-dotsNav.addEventListener('click' , e => {
+dotsNav.addEventListener('click', e => {
     const targetDot = e.target.closest('button');
-    if(!targetDot) return;
+    if (!targetDot) return;
     const currentSlide = track.querySelector('.current-slide');
     const currentDot = dotsNav.querySelector('.current-slide');
     const targetIndex = dots.findIndex(dot => dot === targetDot);
@@ -110,19 +110,19 @@ dotsNav.addEventListener('click' , e => {
     updateDot(currentDot, targetDot);
     hideShowArrows(prevButton, nextButton, slides, targetIndex);
 
- 
+
 })
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     //  scrolling down navbar function ////
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         // check if the window is scroll more than 500px, add or remove solid class //
-        if($(this).scrollTop()> 600){
+        if ($(this).scrollTop() > 600) {
             $(".bar").addClass("solid");
-        }else{
+        } else {
             $(".bar").removeClass("solid");
         }
     })
@@ -141,7 +141,7 @@ $(document).ready(function(){
         auidoElement.play();
     })
 
-    $("#pause").on("click", function (){
+    $("#pause").on("click", function () {
         auidoElement.pause();
     })
 
