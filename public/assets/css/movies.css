@@ -54,7 +54,7 @@ body{
 .film-card_title {
     margin: 10px 0;
     font-size: 17px;
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
 }
 .film-card_poster {
     width: 100%;

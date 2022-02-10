@@ -4,6 +4,16 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 // jquery function // 
 $(document).ready(function () {
+
+
+
+  // $("#textbox").bind("keyup", function () {
+  //   var text = $(this).val().toLowerCase();
+  //   var filmCards = $(".film-card_title")
+  //   console.log(filmCards)
+  // })
+
+
   // this function is to render Movie model for more details 
   function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage, genres) {
     modalYear = modalYear.slice(0, 4);
@@ -100,6 +110,5 @@ $(document).ready(function () {
     })
   }
   getTvResults()
-
 })
 
