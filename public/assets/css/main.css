@@ -13,12 +13,19 @@
     --orange70: #dd4b39;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* vav bar  */
+
 .navbar{
-    height: 10vh;
     font-family: 'Bebas Neue', cursive;
     font-size: 25px;
-    background-color: rgb(238, 236, 236);
+    position: sticky;
 }
 .nav-item:hover{
     background-color: var(--red100);
@@ -40,6 +47,9 @@
 
 
 /* Footer */
+footer{
+    position: relative;
+}
 .end{
     background-color: var(--blue100);
     width: 100%;
