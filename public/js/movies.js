@@ -4,15 +4,13 @@ var imgURL = "https://image.tmdb.org/t/p/w154";
 
 // jquery function // 
 $(document).ready(function () {
-
-
-
-  // $("#textbox").bind("keyup", function () {
-  //   var text = $(this).val().toLowerCase();
-  //   var filmCards = $(".film-card_title")
-  //   console.log(filmCards)
-  // })
-
+  // this function helps the user to search movies
+  $("#textbox").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $(".film-card").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    })
+  })
 
   // this function is to render Movie model for more details 
   function renderModalDetails(modalTitle, modalPoster, modalYear, modalOverview, modalTagline, modalHomepage, genres) {
