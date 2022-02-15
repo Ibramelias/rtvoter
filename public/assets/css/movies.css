@@ -4,6 +4,13 @@ body{
 }
 /* Navbar */
 
+.search-bar{
+    display: flex;
+    justify-content: center;
+}
+.material-icons{
+    margin-top: 10px;
+}
 
 
 /* all move page */
@@ -76,6 +83,8 @@ body{
 
 .modal{
     width: 10;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
