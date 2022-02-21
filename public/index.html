@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+
+    <!-- swiper first silde font -->
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
     <!-- title fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 
@@ -39,6 +43,9 @@
 
     <!-- Social Media link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swipper links -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/nav.css">
@@ -79,15 +86,54 @@
         </div>
     </nav>
     <div class="main">
-
         <!-- game of the month section with music buttons -->
-        <div class="title">
+        <!-- <div class="title">
             <h1 class='header'>Call Of Duty</h1>
             <div class="row buttons">
                 <p id="play" class='col-3 btn btn-primary'>Experince with music</p>
                 <p id="pause" class='col-3 btn btn-primary'>Pause</p>
                 <p type="buttons" class='col-3 btn btn-primary'>Learn more</p>
             </div>
+        </div> -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide sildone">
+                    <div class="Enter-Liberary">
+                        <h1>YOUR BIGGEST ENTERTAINMENT<br>LIBERARY IS IN YOUR<br> HANDS NOW</h1>
+                        <div class="row ">
+                            <div class="col">
+                                <button class="btn "><a class='sildBtn' href="movies.html">Movies</a></button>
+                                <button class="btn "><a class='sildBtn' href="games.html">Games</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <div class="slidShow slidTwo">
+                        <img class='imgSlideTwo'
+                            src="https://cdn1.dotesports.com/wp-content/uploads/2019/10/03111139/call-of-duty-mobile-1.jpg"
+                            alt="Spider-Man">
+                        <h1>dasdasdasd</h1>
+                    </div>
+                </div> -->
+                <!-- <div class="swiper-slide">
+                    <div class="slidShow">
+                        <h1></h1>
+                        <img src="https://cdn1.dotesports.com/wp-content/uploads/2019/10/03111139/call-of-duty-mobile-1.jpg"
+                            alt="Spider-Man">
+                    </div>
+                </div> -->
+                <!-- <div class="swiper-slide">
+                    <div class="slidShow">
+                        <h1></h1>
+                        <img src="https://cdn1.dotesports.com/wp-content/uploads/2019/10/03111139/call-of-duty-mobile-1.jpg"
+                            alt="Spider-Man">
+                    </div>
+                </div> -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
 
         <!-- scroll down button  -->
@@ -285,6 +331,7 @@
 
 
     <!-- ion-icon link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
@@ -302,6 +349,26 @@
     <script src="js/speech.js"></script>
 
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

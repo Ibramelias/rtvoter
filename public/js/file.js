@@ -105,19 +105,14 @@ dotsNav.addEventListener('click', e => {
     const currentDot = dotsNav.querySelector('.current-slide');
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
-
     moveToSlide(track, currentSlide, targetSlide);
     updateDot(currentDot, targetDot);
     hideShowArrows(prevButton, nextButton, slides, targetIndex);
-
 
 })
 
 
 $(document).ready(function () {
-
-    //  scrolling down navbar function ////
-
     $(window).scroll(function () {
         // check if the window is scroll more than 500px, add or remove solid class //
         if ($(this).scrollTop() > 600) {
@@ -128,19 +123,12 @@ $(document).ready(function () {
     })
 
     var auidoElement = document.createElement("audio");
-
     auidoElement.setAttribute("src", "assets/audio/intro.mp3");
-
-    // $("#home").on("click", function(){
-    //     auidoElement.play();
-    // });
-
     $("#play").on("click", function (event) {
         event.preventDefault();
         this.currentTime = 0;
         auidoElement.play();
     })
-
     $("#pause").on("click", function () {
         auidoElement.pause();
     })

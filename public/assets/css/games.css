@@ -7,9 +7,8 @@
 
 .all-games{
     padding-top: 60px ;
-    background-color: #000;
-    width: 195%;
-    height: 250vh;
+    background-color: var(--black);
+    height: 100vh;
 }
 
 
@@ -25,27 +24,11 @@
 }
 
 
-.info p{
-    font-size: 13px;
-    color: #fff;
-    
+
+
+.game-state{
+    color: var(--white);
+    text-align: center;
+    margin-top: 20%;
 }
-
-.info img {
-    /* height: vh; */
-    margin-left: 15px;
-    border-radius: 5%;
-    cursor: pointer;
-}
-
-
-.film-section_title{
-color:#fff;
-margin-left: 10px;
-font-family: 'Calistoga', cursive;
-font-size: 25px;
-
-}
-
-
 
